@@ -14,6 +14,16 @@ class M_rental extends CI_Model{
 		return $this->db->get($table);
 	}
 
+	function get_telat($table){
+		$this->db->select('*');
+		$this->db->from($table);
+		$this->db->where('bps_telat IS NOT NULL');
+		$this->db->order_by('id_detil','desc');
+		$this->db->limit(10);
+		return $this->db->get();
+		
+	}
+
 	function insert_data($data,$table){
 		$this->db->insert($table,$data);
 	}

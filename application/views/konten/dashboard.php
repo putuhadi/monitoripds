@@ -229,7 +229,7 @@
           </div>
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Kabupaten Telat</h3>
+              <h3 class="box-title">Hasil Evaluasi Pimpinan</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -241,12 +241,12 @@
                 </tr>
                 <?php 
 		            $no = 1;
-		            foreach($kegiatan as $k){ 
+		            foreach($late as $l){ 
                 ?>
                 <tr>
                 <td><?php echo $no++; ?></td>
-                <td><?php echo $k->nama_detil ?></td>
-                <td>Sumba Timur
+                <td><?php echo $l->nama_detil ?></td>
+                <td><?php echo $l->bps_telat ?>
                 </td>
             </tr>
             <?php 

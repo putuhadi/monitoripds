@@ -59,6 +59,13 @@
                         style="width: 100%;" type="namakab">
                   <option value="Sumba Barat">Sumba Barat</option>
                   <option value="Sumba Timur">Sumba Timur</option>
+                  <option value="Kab Kupang">Kab. Kupang</option>
+                  <option value="Timor Tengah Selatan">Timor Tengah Selatan</option>
+                  <option value="Timor Tengah Utara">Timor Tengah Utara</option>
+                  <option value="Belu">Belu</option>
+                  <option value="Alor">Alor</option>
+                  <option value="Sumba Barat">Lembata</option>
+                  <option value="Sumba Timur">Alor</option>
                   <option value="Kab Kupang">Kab Kupang</option>
                   <option value="Timor Tengah Selatan">Timor Tengah Selatan</option>
                   <option value="Timor Tengah Utara">Timor Tengah Utara</option>

@@ -18,6 +18,7 @@ class Admin extends CI_Controller {
 			$data['kegiatan'] = $this->m_rental->keg_terakhir('bps_detil_keg')->result();
 			$data['deadline'] = $this->m_rental->warning('bps_detil_keg')->result();
 			$data['timeline'] = $this->m_rental->get_data('bps_detil_keg')->result();
+			$data['late'] = $this->m_rental->get_telat('bps_detil_keg')->result();
 		}
 		else
 		{

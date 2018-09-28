@@ -23,6 +23,19 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
+            <?php 
+            if(isset($_GET['pesan']))
+            {
+            if($_GET['pesan'] == "gagal")
+              {
+			      	echo "<div class='alert alert-danger'>Login gagal! Username dan password salah.</div>";
+              }
+              elseif($_GET['pesan'] == "berhasil")
+              {
+				      echo "<div class='alert alert-success'>Kabupaten telat berhasil diupdate</div>";
+              } 
+	        	}
+		        ?>
             <form role="form" method="post" action="<?php echo base_url().'admin/update_evaluasi' ?>" enctype="multipart/form-data">
                 
               <div class="box-body">

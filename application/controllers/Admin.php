@@ -103,17 +103,15 @@ class Admin extends CI_Controller {
 	}	
 
 
-	function update_evaluasi(){
+	function update_evaluasi()
+	{
 		$kabupaten = $this->input->post('kabupaten');
-		$iddetil = $this->input->post('iddetil');
-    	$data = array();
-		foreach( $foods as $key => $value)
-			{
-      		$data[$key]['name']=$name;
-      		$data[$key]['foods']=$value;
-    		}
-		$this->m_rental->update_data($where,$data,'bps_detil_keg');			
-		redirect(base_url().'admin/listkegiatan?pesan=berhasil');
+		$w = $this->input->post('id_detil');
+		$data= array(
+			'bps_telat' => implode(",",$this->input->post('kabupaten'))  
+		);
+		$this->m_rental->update_data($w,$data,'bps_detil_keg');			
+		redirect(base_url().'admin/evaluasiadd?pesan=berhasil');
 	}	
 
 	function ganti_password_act(){

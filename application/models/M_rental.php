@@ -23,6 +23,7 @@ class M_rental extends CI_Model{
 		$this->db->update($table,$data);
 	}
 
+
 	function delete_data($where,$table){
 		$this->db->where($where);
 		$this->db->delete($table);

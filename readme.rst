@@ -1,14 +1,8 @@
 ###################
-What is CodeIgniter
+Apa itu aplikasi monitoring IPDS
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Adalah aplikasi untuk memantau segala jenis pekerjaan yang sedang berlangsung di IPDS BPS Provinsi NTT. Aplikasi ini berguna untuk melihat segala sumber daya yang terkait dengan survey/sensus beserta jadwalnya sehingga subject matter lebih gampang memantau setiap langkah kegiatan yang sedang berlangsung.
 
 *******************
 Release Information

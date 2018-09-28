@@ -227,8 +227,38 @@
             </div>
             <!-- /.box-body -->
           </div>
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Kabupaten Telat</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-condensed">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Nama Kegiatan</th>
+                  <th>Kabupaten Telat</th>
+                </tr>
+                <?php 
+		            $no = 1;
+		            foreach($kegiatan as $k){ 
+                ?>
+                <tr>
+                <td><?php echo $no++; ?></td>
+                <td><?php echo $k->nama_detil ?></td>
+                <td>Sumba Timur
+                </td>
+            </tr>
+            <?php 
+		        }
+		        ?>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
 
         </section>
+        
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
         <section class="col-lg-7 connectedSortable">

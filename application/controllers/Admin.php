@@ -106,9 +106,11 @@ class Admin extends CI_Controller {
 	function update_evaluasi()
 	{
 		$kabupaten = $this->input->post('kabupaten');
-		$w = $this->input->post('id_detil');
 		$data= array(
 			'bps_telat' => implode(",",$this->input->post('kabupaten'))  
+		);
+		$w = array(
+			'id_detil' => $this->input->post('id_detil')
 		);
 		$this->m_rental->update_data($w,$data,'bps_detil_keg');			
 		redirect(base_url().'admin/evaluasiadd?pesan=berhasil');
